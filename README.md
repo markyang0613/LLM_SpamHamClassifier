@@ -29,20 +29,20 @@ Even though ChatGPT-3.5 Turbo is a general-purpose language model, it demonstrat
 ## Installation
 
 1. **Clone the Repository:**
-   ```bash
+   
    git clone https://github.com/yourusername/spam-ham-classifier.git
    cd spam-ham-classifier
 
 
 Install Dependencies: Make sure you have Python 3 installed, then run:
 
-bash
-Copy
-pip install openai scikit-learn pandas
+```bash
+   pip install openai scikit-learn pandas
+```
 Set Up Your OpenAI API Key: Export your API key as an environment variable:
 
-bash
-Copy
+
+
 export OPENAI_API_KEY='your-api-key'
 Alternatively, you can add it directly in your code (not recommended for production).
 
@@ -65,21 +65,17 @@ An example of a high-performing model output is as follows:
 
 Confusion Matrix:
 
-lua
-Copy
 [[88  0]
  [ 1 11]]
 Classification Report:
 
-markdown
-Copy
               precision    recall  f1-score   support
          ham       0.99      1.00      0.99        88
         spam       1.00      0.92      0.96        12
 
     accuracy                           0.99       100
-   macro avg       0.99      0.96      0.98       100
-weighted avg       0.99      0.99      0.99       100
+    macro avg       0.99      0.96      0.98       100
+    weighted avg       0.99      0.99      0.99       100
 These results are particularly surprising given that the base ChatGPT-3.5 Turbo model was used without any task-specific fine-tuning.
 
 Future Enhancements
@@ -98,9 +94,6 @@ The open-source community for the tools and libraries that made this project pos
 
 License
 This project is licensed under the MIT License.
-
-yaml
-Copy
 
 ---
 
